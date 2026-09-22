@@ -1,302 +1,489 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CyberFácil | Aprende Ciberseguridad</title>
+```
+<title>CyberFácil | Ciberseguridad para todos</title>
 
-    <link rel="stylesheet" href="style.css">
+<meta name="description" content="CyberFácil: aprende ciberseguridad de forma sencilla, práctica y sin conocimientos técnicos.">
+
+<link rel="stylesheet" href="style.css">
+```
+
 </head>
 
 <body>
 
-    <!-- MENÚ -->
+```
+<!-- ==================== MENÚ ==================== -->
 
-    <header class="navbar">
+<header class="navbar">
 
-        <a href="#" class="logo">
-            <span>CYBER</span>FÁCIL
-        </a>
+    <a href="#inicio" class="logo">
+        <span>CYBER</span>EASY
+    </a>
 
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#temas">Temas</a>
-            <a href="#laboratorio">Laboratorio</a>
-            <a href="#sobre-mi">Sobre el proyecto</a>
-        </nav>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#aprende">Aprende</a>
+        <a href="#situaciones">¿Qué hago si...?</a>
+        <a href="#laboratorio">Cyber Lab</a>
+        <a href="#sobre-mi">Sobre el proyecto</a>
+    </nav>
 
-    </header>
+</header>
 
 
-    <!-- INICIO -->
+<!-- ==================== INICIO ==================== -->
 
-    <main>
+<main>
 
-        <section id="inicio" class="hero">
+    <section id="inicio" class="hero">
 
-            <div class="hero-text">
-
-                <p class="small-title">
-                    CIBERSEGURIDAD PARA TODOS
-                </p>
-
-                <h1>
-                    Aprende a protegerte
-                    <span>en Internet.</span>
-                </h1>
-
-                <p class="description">
-                    Explicaciones sencillas, ejemplos reales
-                    y pequeños experimentos para entender
-                    cómo funciona la ciberseguridad.
-                </p>
-
-                <div class="buttons">
-
-                    <a href="#temas" class="button primary">
-                        Empezar a aprender
-                    </a>
-
-                    <a href="#laboratorio" class="button secondary">
-                        🧪 Probar el laboratorio
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="hero-card">
-
-                <div class="terminal">
-
-                    <div class="terminal-top">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <p>
-                        <span class="green">user</span>@cyberfacil:~$
-                    </p>
-
-                    <p>
-                        ¿Es segura mi contraseña?
-                    </p>
-
-                    <p class="result">
-                        ✓ Analizando...
-                    </p>
-
-                    <p class="result">
-                        ✓ 14 caracteres
-                    </p>
-
-                    <p class="result">
-                        ✓ Mayúsculas
-                    </p>
-
-                    <p class="result">
-                        ✓ Símbolos
-                    </p>
-
-                    <p class="green">
-                        Seguridad: ALTA
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- TEMAS -->
-
-        <section id="temas" class="section">
-
-            <div class="section-title">
-
-                <p class="small-title">
-                    APRENDE
-                </p>
-
-                <h2>
-                    Conceptos de ciberseguridad
-                </h2>
-
-                <p>
-                    Aprende desde cero, sin necesidad de
-                    conocimientos técnicos.
-                </p>
-
-            </div>
-
-
-            <div class="cards">
-
-                <article class="card">
-
-                    <div class="icon">🔐</div>
-
-                    <h3>Contraseñas</h3>
-
-                    <p>
-                        Aprende qué hace que una contraseña
-                        sea segura y cómo proteger tus cuentas.
-                    </p>
-
-                    <a href="#">
-                        Aprender →
-                    </a>
-
-                </article>
-
-
-                <article class="card">
-
-                    <div class="icon">🎣</div>
-
-                    <h3>Phishing</h3>
-
-                    <p>
-                        Descubre cómo funcionan las estafas
-                        que intentan engañarte para conseguir
-                        tus datos.
-                    </p>
-
-                    <a href="#">
-                        Aprender →
-                    </a>
-
-                </article>
-
-
-                <article class="card">
-
-                    <div class="icon">🔎</div>
-
-                    <h3>Hash</h3>
-
-                    <p>
-                        Descubre qué es un hash y por qué se
-                        utiliza en ciberseguridad.
-                    </p>
-
-                    <a href="#">
-                        Aprender →
-                    </a>
-
-                </article>
-
-
-                <article class="card">
-
-                    <div class="icon">🌐</div>
-
-                    <h3>Internet</h3>
-
-                    <p>
-                        Entiende qué ocurre cuando escribes
-                        una dirección web y pulsas Enter.
-                    </p>
-
-                    <a href="#">
-                        Aprender →
-                    </a>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- LABORATORIO -->
-
-        <section id="laboratorio" class="lab-section">
-
-            <div class="lab-content">
-
-                <p class="small-title">
-                    CYBER LAB
-                </p>
-
-                <h2>
-                    No solo lo leas.
-                    <span>Pruébalo.</span>
-                </h2>
-
-                <p>
-                    Experimenta con conceptos de ciberseguridad
-                    directamente desde tu navegador.
-                </p>
-
-                <div class="lab-buttons">
-
-                    <button onclick="showMessage('password')">
-                        🔐 Analizar contraseña
-                    </button>
-
-                    <button onclick="showMessage('hash')">
-                        #️⃣ Generar un hash
-                    </button>
-
-                    <button onclick="showMessage('phishing')">
-                        🎣 Detectar phishing
-                    </button>
-
-                </div>
-
-                <div id="lab-message" class="lab-message"></div>
-
-            </div>
-
-        </section>
-
-
-        <!-- SOBRE EL PROYECTO -->
-
-        <section id="sobre-mi" class="about">
+        <div class="hero-text">
 
             <p class="small-title">
-                SOBRE EL PROYECTO
+                CIBERSEGURIDAD PARA TODOS
+            </p>
+
+            <h1>
+                Internet es parte de tu vida.
+                <span>Aprende a protegerla.</span>
+            </h1>
+
+            <p class="description">
+                Ciberseguridad explicada de forma sencilla,
+                con ejemplos cotidianos y consejos que puedes
+                aplicar desde hoy.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#aprende" class="button primary">
+                    Empezar a aprender
+                </a>
+
+                <a href="#situaciones" class="button secondary">
+                    🚨 Tengo un problema
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="terminal">
+
+                <div class="terminal-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <p>
+                    <span class="green">user</span>@cyberfacil:~$
+                </p>
+
+                <p>
+                    ¿Cómo sé si este mensaje es una estafa?
+                </p>
+
+                <p class="result">
+                    ✓ Revisa quién lo envía
+                </p>
+
+                <p class="result">
+                    ✓ Comprueba el enlace
+                </p>
+
+                <p class="result">
+                    ✓ No te dejes llevar por la urgencia
+                </p>
+
+                <p class="result">
+                    ✓ Nunca compartas tus contraseñas
+                </p>
+
+                <p class="green">
+                    Resultado: piensa antes de hacer clic.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== APRENDE ==================== -->
+
+    <section id="aprende" class="section">
+
+        <div class="section-title">
+
+            <p class="small-title">
+                APRENDE
             </p>
 
             <h2>
-                Ciberseguridad explicada
-                de forma sencilla.
+                Ciberseguridad que sí te sirve
             </h2>
 
             <p>
-                Este proyecto nace con una idea muy sencilla:
-                que cualquier persona pueda aprender a protegerse
-                en Internet sin necesidad de tener conocimientos
-                informáticos.
+                No necesitas trabajar en informática.
+                Solo necesitas utilizar Internet.
             </p>
 
-        </section>
-
-    </main>
+        </div>
 
 
-    <!-- FOOTER -->
+        <div class="cards">
 
-    <footer>
+
+            <!-- CONTRASEÑAS -->
+
+            <article class="card">
+
+                <div class="icon">🔐</div>
+
+                <h3>Contraseñas</h3>
+
+                <p>
+                    ¿Utilizas la misma contraseña para todo?
+                    Descubre por qué puede ser un problema y
+                    cómo proteger tus cuentas.
+                </p>
+
+                <a href="#">
+                    Leer → 
+                </a>
+
+            </article>
+
+
+            <!-- PHISHING -->
+
+            <article class="card">
+
+                <div class="icon">🎣</div>
+
+                <h3>Phishing</h3>
+
+                <p>
+                    Aprende a reconocer mensajes, correos y
+                    páginas falsas antes de introducir tus datos.
+                </p>
+
+                <a href="#">
+                    Leer →
+                </a>
+
+            </article>
+
+
+            <!-- MÓVIL -->
+
+            <article class="card">
+
+                <div class="icon">📱</div>
+
+                <h3>Tu móvil</h3>
+
+                <p>
+                    Aplicaciones, permisos, ubicación, cámara,
+                    micrófono... ¿sabes realmente qué estás
+                    permitiendo?
+                </p>
+
+                <a href="#">
+                    Leer →
+                </a>
+
+            </article>
+
+
+            <!-- WIFI -->
+
+            <article class="card">
+
+                <div class="icon">📶</div>
+
+                <h3>WiFi e Internet</h3>
+
+                <p>
+                    Descubre qué ocurre cuando te conectas a
+                    una red WiFi y qué deberías tener en cuenta.
+                </p>
+
+                <a href="#">
+                    Leer →
+                </a>
+
+            </article>
+
+
+            <!-- REDES SOCIALES -->
+
+            <article class="card">
+
+                <div class="icon">📸</div>
+
+                <h3>Redes sociales</h3>
+
+                <p>
+                    Fotos, ubicación, cuentas, mensajes y
+                    privacidad: pequeños detalles que pueden
+                    revelar más información de la que imaginas.
+                </p>
+
+                <a href="#">
+                    Leer →
+                </a>
+
+            </article>
+
+
+            <!-- IA -->
+
+            <article class="card">
+
+                <div class="icon">🤖</div>
+
+                <h3>IA y seguridad</h3>
+
+                <p>
+                    Deepfakes, voces clonadas, estafas y
+                    privacidad. Aprende a utilizar la IA sin
+                    bajar la guardia.
+                </p>
+
+                <a href="#">
+                    Leer →
+                </a>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== SITUACIONES ==================== -->
+
+    <section id="situaciones" class="section situations">
+
+        <div class="section-title">
+
+            <p class="small-title">
+                ¿TE HA PASADO?
+            </p>
+
+            <h2>
+                No necesitas saber cómo se llama el ataque.
+            </h2>
+
+            <p>
+                Cuéntame qué te ha ocurrido y descubre
+                qué puedes hacer.
+            </p>
+
+        </div>
+
+
+        <div class="cards situations-cards">
+
+
+            <article class="card">
+
+                <div class="icon">📩</div>
+
+                <h3>
+                    He pulsado un enlace sospechoso
+                </h3>
+
+                <p>
+                    Has abierto un enlace que no te daba
+                    buena espina. ¿Y ahora qué?
+                </p>
+
+                <a href="#">
+                    ¿Qué hago? →
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="icon">📱</div>
+
+                <h3>
+                    Me han robado el móvil
+                </h3>
+
+                <p>
+                    Aprende qué deberías hacer cuanto antes
+                    para proteger tus cuentas.
+                </p>
+
+                <a href="#">
+                    ¿Qué hago? →
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="icon">🔑</div>
+
+                <h3>
+                    Creo que alguien sabe mi contraseña
+                </h3>
+
+                <p>
+                    Descubre qué pasos puedes seguir para
+                    recuperar el control de tu cuenta.
+                </p>
+
+                <a href="#">
+                    ¿Qué hago? →
+                </a>
+
+            </article>
+
+
+            <article class="card">
+
+                <div class="icon">💳</div>
+
+                <h3>
+                    He dado mis datos en una web falsa
+                </h3>
+
+                <p>
+                    Si has introducido datos personales o
+                    bancarios, estos son los pasos que deberías
+                    revisar.
+                </p>
+
+                <a href="#">
+                    ¿Qué hago? →
+                </a>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== CYBER LAB ==================== -->
+
+    <section id="laboratorio" class="lab-section">
+
+        <div class="lab-content">
+
+            <p class="small-title">
+                CYBER LAB
+            </p>
+
+            <h2>
+                No solo lo leas.
+                <span>Pruébalo.</span>
+            </h2>
+
+            <p>
+                Experimenta con conceptos de ciberseguridad
+                directamente desde tu navegador.
+            </p>
+
+
+            <div class="lab-buttons">
+
+                <button onclick="showMessage('password')">
+                    🔐 Analizar contraseña
+                </button>
+
+                <button onclick="showMessage('hash')">
+                    #️⃣ Generar un hash
+                </button>
+
+                <button onclick="showMessage('phishing')">
+                    🎣 Detectar phishing
+                </button>
+
+            </div>
+
+
+            <div id="lab-message" class="lab-message"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== SOBRE EL PROYECTO ==================== -->
+
+    <section id="sobre-mi" class="about">
+
+        <p class="small-title">
+            SOBRE EL PROYECTO
+        </p>
+
+        <h2>
+            Ciberseguridad explicada
+            de forma sencilla.
+        </h2>
 
         <p>
-            © 2026 CyberFácil
+            CyberFácil nace con una idea muy sencilla:
+            hacer que la ciberseguridad sea comprensible
+            para cualquier persona, independientemente de
+            su profesión o conocimientos informáticos.
         </p>
 
         <p>
-            Proyecto personal de ciberseguridad
+            Aquí encontrarás explicaciones cortas,
+            ejemplos de situaciones reales y pequeños
+            experimentos para entender mejor cómo
+            protegerte en Internet.
         </p>
 
-    </footer>
+        <p>
+            Porque no hace falta ser informático para
+            saber cuándo algo no huele bien.
+        </p>
+
+    </section>
+
+</main>
 
 
-    <script src="script.js"></script>
+<!-- ==================== FOOTER ==================== -->
+
+<footer>
+
+    <p>
+        © 2026 CyberFácil
+    </p>
+
+    <p>
+        Proyecto personal de ciberseguridad
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+```
 
 </body>
 </html>
